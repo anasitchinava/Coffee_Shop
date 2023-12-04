@@ -1,0 +1,185 @@
+#banner {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+
+#banner figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#banner figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+    font-size: large;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 17px;
+}
+
+a:hover {
+    background-color: rgb(230, 214, 191);;
+    color: black;
+}
+
+hr {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#about div {
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 90%;
+    margin: auto;
+    font-size: large;
+}
+
+#about .gallery {
+    justify-content: center;
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#about .gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about .gallery div {
+    flex: 1 0 15%;
+}
+
+@media (max-width: 600px) {
+    #about .gallery div {
+        flex-basis: 100%;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2% auto;
+}
+
+.contact {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.contact form {
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 45%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background: rgba(17, 17, 17, 0.5);
+    color: antiquewhite;
+}
+
+input[type="reset"], input[type="submit"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-group input::placeholder {
+    color: rgb(216, 203, 186);
+}
+
+.contact form textarea::placeholder {
+    color: rgb(216, 203, 186);
+}
+
+address {
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+    margin: 0 auto;
+}
+
+address ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
